@@ -9,10 +9,10 @@ export default async function Home() {
     <S.Container>
       <Nav />
       <S.Content>
-        <S.Home />
-        <S.About />
-        <S.Services />
-        <S.Contact />
+        <S.Home id="home" />
+        <S.About id="about" />
+        <S.Services id="services" />
+        <S.Contact id="contact" />
       </S.Content>
       <Footer />
     </S.Container>
