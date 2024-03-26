@@ -19,5 +19,7 @@ export const theme = extendTheme({
 
   fonts: {
     roboto: 'var(--font-roboto)',
+    poppins: 'var(--font-poppins)',
+    dmSans: 'var(--font-dmSans)',
   },
 })

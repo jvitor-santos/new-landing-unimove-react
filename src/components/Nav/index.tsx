@@ -8,21 +8,21 @@ export function Nav() {
   return (
     <S.Container>
       <S.Logo>
-        <Text color="#000">Uni</Text>
-        <Text color="#64e9ff">Move</Text>
+        <Text color="#000" fontFamily={"poppins"} fontWeight={'800'}>Uni</Text>
+        <Text color="#64e9ff" fontFamily={"poppins"} fontWeight={'800'}>Move</Text>
       </S.Logo>
       <S.Content>
         <a href={'#home'}>
-          <Text>Inicio</Text>
+          <S.Text>Inicio</S.Text>
         </a>
         <a href={'#about'}>
-          <Text>Sobre</Text>
+          <S.Text>Sobre</S.Text>
         </a>
         <a href={'#services'}>
-          <Text>Serviços</Text>
+          <S.Text>Serviços</S.Text>
         </a>
         <a href={'#contact'}>
-          <Text>Contato</Text>
+          <S.Text>Contato</S.Text>
         </a>
       </S.Content>
     </S.Container>

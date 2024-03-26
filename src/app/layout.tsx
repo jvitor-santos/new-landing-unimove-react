@@ -1,5 +1,5 @@
 import Script from 'next/script'
-import { Roboto_Flex } from 'next/font/google'
+import { Roboto_Flex, Poppins, DM_Sans } from 'next/font/google'
 
 import { AppProvider } from '~/hooks'
 
@@ -21,13 +21,27 @@ const roboto = Roboto_Flex({
   weight: ['300', '400', '600', '700', '800'],
 })
 
+const poppins = Poppins({
+  display: 'swap',
+  subsets: ['latin'],
+  variable: '--font-poppins',
+  weight: ['300', '400', '600', '700', '800'],
+})
+
+const dmSans = DM_Sans({
+  display: 'swap',
+  subsets: ['latin'],
+  variable: '--font-dmSans',
+  weight: ['400', '500', '700'],
+})
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-BR" className={`${roboto.variable} scroll-smooth`}>
+    <html lang="pt-BR" className={`${roboto.variable} ${poppins.variable} ${dmSans.variable} scroll-smooth`}>
       <body>
         <AppProvider>{children}</AppProvider>
       </body>

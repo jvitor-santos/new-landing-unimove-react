@@ -17,12 +17,15 @@ export const Content = styled(C.Flex)`
   gap: 1rem;
   display: flex;
   margin-right: 8rem;
-
-  color: #000;
-  font-weight: 400;
 `
 
 export const Logo = styled(C.Flex)`
-  font-weight: 800;
+  font-size: 1.5rem;
   margin-left: 8rem;
+`
+
+export const Text = styled(C.Text)`
+  color: #000;
+  font-weight: 400;
+  font-family: "poppins",
 `
