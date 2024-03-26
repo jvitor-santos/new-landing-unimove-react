@@ -27,5 +27,5 @@ export const Logo = styled(C.Flex)`
 export const Text = styled(C.Text)`
   color: #000;
   font-weight: 400;
-  font-family: "poppins",
+  font-family: 'poppins';
 `

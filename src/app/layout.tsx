@@ -41,7 +41,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-BR" className={`${roboto.variable} ${poppins.variable} ${dmSans.variable} scroll-smooth`}>
+    <html
+      lang="pt-BR"
+      className={`${roboto.variable} ${poppins.variable} ${dmSans.variable} scroll-smooth`}
+    >
       <body>
         <AppProvider>{children}</AppProvider>
       </body>
