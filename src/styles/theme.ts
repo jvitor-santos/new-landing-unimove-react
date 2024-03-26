@@ -5,7 +5,7 @@ export const theme = extendTheme({
     global: {
       *: {
         scrollBehavior: 'smooth',
-      }
+      },
       html: {
         // fontSize: '62.5%',
       },
