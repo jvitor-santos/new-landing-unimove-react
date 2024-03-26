@@ -4,12 +4,12 @@ export const theme = extendTheme({
   styles: {
     global: {
       html: {
-        scrollBehavior: 'smooth',
         // fontSize: '62.5%',
       },
 
       body: {
         bg: '#EEEEEE',
+        scrollBehavior: 'smooth',
         fontFamily: 'Roboto, arial, sans-serif',
       },
     },
