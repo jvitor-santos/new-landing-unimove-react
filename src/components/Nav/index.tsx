@@ -3,7 +3,6 @@
 import * as S from './styles'
 
 import { Text } from '@chakra-ui/react'
-import NextLink from 'next/link'
 
 export function Nav() {
   return (
@@ -13,18 +12,18 @@ export function Nav() {
         <Text color="#64e9ff">Move</Text>
       </S.Logo>
       <S.Content>
-        <NextLink href={'#home'}>
+        <a href={'#home'}>
           <Text>Inicio</Text>
-        </NextLink>
-        <NextLink href={'#about'}>
+        </a>
+        <a href={'#about'}>
           <Text>Sobre</Text>
-        </NextLink>
-        <NextLink href={'#services'}>
+        </a>
+        <a href={'#services'}>
           <Text>Serviços</Text>
-        </NextLink>
-        <NextLink href={'#contact'}>
+        </a>
+        <a href={'#contact'}>
           <Text>Contato</Text>
-        </NextLink>
+        </a>
       </S.Content>
     </S.Container>
   )
