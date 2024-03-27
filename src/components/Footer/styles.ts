@@ -8,6 +8,10 @@ export const Content = styled(C.Flex)`
   align-items: center;
   background-color: #64e9ff;
   justify-content: space-between;
+
+  @media (max-width: 375px) {
+    height: 18.375rem;
+  }
 `
 
 export const Logo = styled(C.Flex)`
@@ -17,7 +21,7 @@ export const Logo = styled(C.Flex)`
 
 export const Reserved = styled(C.Flex)`
   gap: 1.5rem;
-  margin-left: 8rem;
+  margin-left: 1.5rem;
   flex-direction: column;
 
   color: #fff;

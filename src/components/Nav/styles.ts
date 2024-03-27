@@ -20,12 +20,42 @@ export const Content = styled(C.Flex)`
 `
 
 export const Logo = styled(C.Flex)`
+  cursor: pointer;
   font-size: 1.5rem;
   margin-left: 8rem;
+
+  @media (max-width: 375px) {
+    margin-left: 1.5rem;
+  }
 `
 
-export const Text = styled(C.Text)`
-  color: #000;
+export const TextLogo = styled(C.Text)`
+  font-weight: 800;
+  fontfamily: 'poppins';
+`
+
+export const NavText = styled(C.Text)`
+  color: #0f241d;
   font-weight: 400;
-  font-family: 'poppins';
+  font-size: 1rem;
+  font-family: dmSans, san-serif;
+
+  @media (max-width: 375px) {
+    display: none;
+  }
+`
+
+export const Modal = styled(C.Flex)`
+  display: none;
+
+  @media (max-width: 375px) {
+    display: flex;
+    margin-right: 1.5rem;
+  }
+`
+export const ModalText = styled(C.Text)`
+  color: #0f241d;
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: dmSans, san-serif;
 `

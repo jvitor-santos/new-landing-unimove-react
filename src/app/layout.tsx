@@ -33,6 +33,7 @@ const dmSans = DM_Sans({
   subsets: ['latin'],
   variable: '--font-dmSans',
   weight: ['400', '500', '700'],
+  style: 'normal',
 })
 
 export default function RootLayout({
