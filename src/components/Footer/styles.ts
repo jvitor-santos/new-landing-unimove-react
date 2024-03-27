@@ -21,9 +21,13 @@ export const Logo = styled(C.Flex)`
 
 export const Reserved = styled(C.Flex)`
   gap: 1.5rem;
-  margin-left: 1.5rem;
+  margin-left: 8rem;
   flex-direction: column;
 
   color: #fff;
   font-weight: 500;
+
+  @media (max-width: 375px) {
+    margin-left: 1.5rem;
+  }
 `
