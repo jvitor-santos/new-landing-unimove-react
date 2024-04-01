@@ -4,8 +4,10 @@ import * as S from './styles'
 
 import * as C from '@chakra-ui/react'
 
+import { useState } from 'react'
+
 export function Nav() {
-  const { isOpen, onOpen, onClose } = C.useDisclosure()
+  const [ModalOpen, setModalOpen] = useState(false)
 
   return (
     <S.Container>
@@ -28,26 +30,56 @@ export function Nav() {
         </a>
       </S.Content>
       <S.NavModal>
-        <S.Button onClick={onOpen}>
+        <S.Button
+          onClick={() => {
+            setModalOpen(true)
+          }}
+        >
           <C.Image src={'/images/svg/menu.svg'} alt="menu" />
         </S.Button>
-        <C.Modal isOpen={isOpen} onClose={onClose} size={'full'}>
+        <C.Modal
+          isOpen={ModalOpen}
+          onClose={() => {
+            setModalOpen(false)
+          }}
+          size={'full'}
+        >
           <C.ModalOverlay />
           <S.ModalContent>
             <S.ModalCloseButton size={'lg'} />
-            <a href={'#home'} onClick={onClose}>
+            <a
+              href={'#home'}
+              onClick={() => {
+                setModalOpen(false)
+              }}
+            >
               Inicio
             </a>
             <br />
-            <a href={'#about'} onClick={onClose}>
+            <a
+              href={'#about'}
+              onClick={() => {
+                setModalOpen(false)
+              }}
+            >
               Sobre
             </a>
             <br />
-            <a href={'#services'} onClick={onClose}>
+            <a
+              href={'#services'}
+              onClick={() => {
+                setModalOpen(false)
+              }}
+            >
               Serviços
             </a>
             <br />
-            <a href={'#contact'} onClick={onClose}>
+            <a
+              href={'#contact'}
+              onClick={() => {
+                setModalOpen(false)
+              }}
+            >
               Contato
             </a>
           </S.ModalContent>
