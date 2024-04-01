@@ -53,6 +53,15 @@ export const NavText = styled(C.Text)`
     display: none;
   }
 `
+export const NavModal = styled(C.Flex)`
+  display: none;
+
+  @media (max-width: 376px) {
+    display: flex;
+    margin-right: 2.4rem;
+  }
+`
+
 export const Button = styled(C.Button)`
   background-color: #fff;
   margin-right: 1.5rem;

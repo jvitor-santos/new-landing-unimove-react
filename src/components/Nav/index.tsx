@@ -27,30 +27,32 @@ export function Nav() {
           <S.NavText>Contato</S.NavText>
         </a>
       </S.Content>
-      <S.Button onClick={onOpen}>
-        <C.Image src={'/images/svg/menu.svg'} alt="menu" />
-      </S.Button>
-      <C.Modal isOpen={isOpen} onClose={onClose} size={'full'}>
-        <C.ModalOverlay />
-        <S.ModalContent>
-          <S.ModalCloseButton size={'lg'} />
-          <a href={'#home'} onClick={onClose}>
-            Inicio
-          </a>
-          <br />
-          <a href={'#about'} onClick={onClose}>
-            Sobre
-          </a>
-          <br />
-          <a href={'#services'} onClick={onClose}>
-            Serviços
-          </a>
-          <br />
-          <a href={'#contact'} onClick={onClose}>
-            Contato
-          </a>
-        </S.ModalContent>
-      </C.Modal>
+      <S.NavModal>
+        <S.Button onClick={onOpen}>
+          <C.Image src={'/images/svg/menu.svg'} alt="menu" />
+        </S.Button>
+        <C.Modal isOpen={isOpen} onClose={onClose} size={'full'}>
+          <C.ModalOverlay />
+          <S.ModalContent>
+            <S.ModalCloseButton size={'lg'} />
+            <a href={'#home'} onClick={onClose}>
+              Inicio
+            </a>
+            <br />
+            <a href={'#about'} onClick={onClose}>
+              Sobre
+            </a>
+            <br />
+            <a href={'#services'} onClick={onClose}>
+              Serviços
+            </a>
+            <br />
+            <a href={'#contact'} onClick={onClose}>
+              Contato
+            </a>
+          </S.ModalContent>
+        </C.Modal>
+      </S.NavModal>
     </S.Container>
   )
 }
