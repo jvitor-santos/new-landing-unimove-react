@@ -1,3 +1,5 @@
+'use client'
+
 import Script from 'next/script'
 import { Roboto_Flex, Poppins, DM_Sans } from 'next/font/google'
 
